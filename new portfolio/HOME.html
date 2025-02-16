@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/test.css">
+
+    <style>
+        body {
+            background-color: black;
+            overflow-x: hidden;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .head {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            box-shadow: 0 2px 4px gray;
+            background-color: black;
+        }
+
+        a {
+            display: inline-block;
+            font-size: 20px;
+            text-decoration: none;
+            padding: 10px 15px;
+            color: white;
+        }
+
+        a:hover {
+            color: darkgray;
+        }
+
+        .container .box {
+            width: 100%;
+            text-align: center;
+        }
+
+        p {
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h1 {
+            color: gray;
+            text-align: center;
+            font-size: 250%;
+            transition: all 0.5s ease-in-out;
+            overflow-x: hidden;
+        }
+
+        h1:hover {
+            color: orangered;
+            text-shadow: 2px 2px 10px orangered;
+            font-size: 3rem;
+        }
+
+        .container .box1 {
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .box1 img {        
+            width: auto;
+            height: 900px;
+            object-fit: cover;
+            
+        }
+
+        .container .pls {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            color: white;
+            background-color: black;
+            border-color: white;
+            box-shadow: 0 4px 5px white;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+
+        h4 {
+            color: gray;
+            text-align: center;
+            font-size: 40px;
+        }
+
+
+        /* Phone view: Up to 600px */
+    @media only screen and (max-width: 600px) {
+        a {
+            font-size: 16px;
+            padding: 8px;
+            width: auto; /* Removes fixed width */
+        }
+
+        p {
+            font-size: 30px; /* Increased font size for readability */
+            line-height: 1.2; /* Adjusted line height */
+        }
+
+        h1 {
+            font-size: 30px;
+            line-height: 1.5;
+        }
+
+        .container .box1 img {
+            width: 100%; /* Make image take full width */
+            height: auto; /* Adjust height to maintain aspect ratio */
+            object-fit: contain;
+        }
+
+        button {
+            margin: 20px auto;
+            display: block; /* Ensure button is centered */
+        }
+
+        h4 {
+            font-size: 25px; /* Reduced heading size */
+        }
+
+        .container {
+            padding: 0 15px; /* Add padding to ensure text doesn't touch screen edges */
+        }
+    }
+
+    /* Tablet view: Between 601px and 1024px */
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+        a {
+            font-size: 18px;
+            padding: 10px;
+        }
+
+        p {
+            font-size: 40px;
+        }
+
+        h1 {
+            font-size: 45px;
+        }
+
+        .container .pls {
+            padding: 10px 50px;
+        }
+
+        button {
+            width: 180px;
+            height: 45px;
+        }
+
+        h4 {
+            font-size: 35px;
+        }
+    }
+
+
+/* Laptop/Desktop view: Above 1024px */
+@media only screen and (min-width: 1024px) {
+    .container .box1 img {
+        width: 650px;  /* Fixed width for the image */
+        height: 880px; /* Fixed height for the image */
+        float: right;
+        object-fit: cover; /* Ensures the image fills its container */
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 50px;
+        margin-left: 40px;
+    }
+
+    .box, .box1 {
+        width: 48%; /* Both boxes take up 48% of the container */
+    }
+
+    p{
+        font-size: 105px;
+    }
+    a{
+      margin-left: 50px;  
+      font-size: 30px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="head">
+            <a href="HOME.html">HOME</a>
+            <a href="PROFESSIONAL.html">PROFESSIONAL</a>
+            <a href="PROJECT.html">PROJECT</a>
+            <a href="CONTACT.html">CONTACT</a>
+        </div>
+        <div class="container">
+            <div class="box">
+                <p>I'M<br>DINESH KUMAR.</p>
+                <h1>WEB DEVELOPER</h1>
+            </div>
+            <div class="box1">
+                <img src="don1.jpg" alt="Profile Picture of Dinesh Kumar">
+            </div>
+        </div>
+        <div class="container">
+            <div class="pls">
+                <h4>INTRODUCTION</h4>
+                <p>A web developer is a programmer who develops World Wide Web applications using a client–server model. The applications typically use HTML, CSS, and JavaScript in the client, and any general-purpose programming language in the server. HTTP is used for communications between client and server.</p>
+                <a href="DINESHRESUME.jpg"><button>DOWNLOAD RESUME</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

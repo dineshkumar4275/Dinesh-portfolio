@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT</title>
+    <style>
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+     body {
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 37%, rgba(5,71,0,1) 100%);
+        font-family: Arial, sans-serif;
+        padding: 20px;
+     }
+     h1 {
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+     }
+     b {
+        color: white;
+     }
+     h2 {
+        color: white;
+        text-align: center;
+        margin-bottom: 40px;
+     }
+     .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 20px;
+        width: 100%;
+     }
+     .container div {
+        height: 300px;
+        border: 1px solid white;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.1);
+     }
+
+     /* Responsive styles */
+     @media (max-width: 600px) { /* Phone view */
+        h1 {
+            font-size: 24px;
+        }
+        h2 {
+            font-size: 16px;
+        }
+        .container div {
+            height: 250px;
+        }
+     }
+
+     @media (min-width: 601px) and (max-width: 1024px) { /* Tablet view */
+        h1 {
+            font-size: 28px;
+        }
+        h2 {
+            font-size: 18px;
+        }
+        .container div {
+            height: 280px;
+        }
+     }
+
+     @media (min-width: 1025px) { /* Laptop/Desktop view */
+        h1 {
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 20px;
+        }
+        .container div {
+            width: 300px;
+            height: 600px;
+        }
+     }
+
+    </style>
+</head>
+<body>
+    <h1>02 <b>PROJECT</b></h1>
+    <h2>MY LATEST WORK. SEE MORE</h2>
+    <div class="container">
+        <div class="container1"></div>
+        <div class="container2"></div>
+        <div class="container3"></div>
+        <div class="container4"></div>
+        <div class="container5"></div>
+        <div class="container6"></div>
+    </div>
+
+    <script>
+        console.log("hello");
+    </script>
+    
+</body>
+</html>
